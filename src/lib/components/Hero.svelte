@@ -2,6 +2,7 @@
   import { onMount } from "svelte"
   import gsap from "gsap"
   import { ScrollTrigger } from "gsap/ScrollTrigger"
+  import deddyImg from '$lib/assets/Deddy.jpeg';
 
   let heroText: HTMLDivElement
   let section: HTMLElement
@@ -34,10 +35,10 @@
   <div class="flex justify-center items-center">
     <div class="w-[80%] aspect-4/5 p-2 border border-foreground/20">
       <img
-        src="src\lib\assets\Deddy.jpeg"
-        alt="Deddy Sentiana"
-        class="w-full h-full object-cover object-top grayscale"
-      />
+  src={deddyImg}
+  alt="Deddy Sentiana"
+  class="w-full h-full object-cover object-top grayscale"
+/>
     </div>
   </div>
 
